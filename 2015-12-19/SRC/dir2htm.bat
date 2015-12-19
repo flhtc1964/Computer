@@ -4,7 +4,7 @@ rem =================================
 rem =                               =
 rem =  findstr　で正規表現を体験    =
 rem =  onigsed　で正規表現を体験    =
-rem =                               =
+rem =  2015-12-19                   =
 rem =================================
 
 
@@ -77,8 +77,9 @@ echo -
 
 rem findstr /R →　検索文字を正規表現として扱う
 rem findstr /I →　大文字・小文字区別しない
+rem findstr /L →　検索文字列をリテラルとして使用します。
 
-findstr /I /R "%fkey%" %~dp0foo.txt > %~dp0foo2.txt
+findstr /I /L "%fkey%" %~dp0foo.txt > %~dp0foo2.txt
 
 
 echo -
