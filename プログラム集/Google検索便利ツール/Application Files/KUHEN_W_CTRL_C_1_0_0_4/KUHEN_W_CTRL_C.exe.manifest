@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="KUHEN_W_CTRL_C.exe" version="1.0.0.4" publicKeyToken="ebb4f39844bc234c" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="KWCC.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="KUHEN_W_CTRL_C" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="KUHEN_W_CTRL_C.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC マニフェスト オプション
+            Windows のユーザー アカウント制御のレベルを変更するには、
+            requestedExecutionLevel ノードを以下のいずれかで置換します。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            requestedExecutionLevel ノードを指定すると、ファイルおよびレジストリの仮想化は無効になります。
+            旧バージョンとの互換性のためにファイルおよびレジストリの仮想化を
+            使用する場合は、requestedExecutionLevel ノードを削除します。
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KUHEN_W_CTRL_C.exe" size="55296">
+      <assemblyIdentity name="KUHEN_W_CTRL_C" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gLTRpXnYQFbDfppZJpAYDn9vrPpS5ejMjKlUxfyv9aw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="KUHEN_W_CTRL_C.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h0UeIdteCM29dGVw07LmHp593fPbh0IN11GyN3f2uRA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="KWCC.ico" size="15086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NDZsXqrQlxqerCCAJeWECrFsm5FGK3xKjAi3eUHiaY4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!--このアプリケーションが動作するように設計されている、Windows のすべてのバージョンの一覧。
+      Windows は最も互換性の高い環境を自動的に選択します。-->
+      <!--アプリケーションが Windows Vista で動作するように設計されている場合は、次の supportedOS ノードのコメントを解除します-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- アプリケーションが Windows 7 で動作するように設計されている場合は、次の supportedOS ノードのコメントを解除してください-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!--アプリケーションが Windows 8 で動作するように設計されている場合は、次の supportedOS ノードのコメントを解除します-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=KITAHAMA\SKojima" issuerKeyHash="45e1f71a9031ffa7bff4cbdebddf2194bb4ccb5f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>MffAHwodD94nh/+i0dXWbMbbo3UvTvjWgte6FtQwdc8=</DigestValue></Reference></SignedInfo><SignatureValue>Qzz0mqjRPgfXTlFlVi5gS0AtGCXXh1NeSlWbWo13tZkvgv+3FSx4byYHs9x3o48ZP9UV3XpLLh324JdqC+o/zgXD3E7FaC7EfMQSqTg2yhi4mCsbFaELbJXMBAM5JXBJtckfHC6s2YFSczlwTh2NcG4TkDF71O6lSwjgjM0iqVc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vfH0c6Ex5jNNj0FNUgVwHp3ra6RpBBbC04y5kXQ4fjl4vyPPIrCjpGa2+dZsuwWBGHr2uHpYnBzUxe0SU7vIEnNjQcQidrSMzTVVQ9+fx9SXSRMebJj5tI8YmTCDb7yBKzafrYKWdbN38RwP1I5tLij8AOOkLD8IJl3YU1yVqIk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="cf7530d416bad782d6f84e2f75a3dbc66cd6d5d1a2ff8727de0f1d0a1fc0f731" Description="" Url=""><as:assemblyIdentity name="KUHEN_W_CTRL_C.exe" version="1.0.0.4" publicKeyToken="ebb4f39844bc234c" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=KITAHAMA\SKojima</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>sCJdrDJUzfeAvjcN7Kt6Uc4nXamdhOhKxm4d1lfmh2Y=</DigestValue></Reference></SignedInfo><SignatureValue>a8JjP3zAZlPD1LOin30DAYSX4rOUXoanQqwYy67SpFWf3qttJlCAqbo06AwpXYnZYIUPGB08v3S4H5fj1jU9iiC8zI6DVIevu6ex8C5++HjN7C3tYmsCYElM9lO6qGCxB8iWUD0JHVSH2nIiQTx/50qOQ68pQJxLvkJKRfRwJb8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vfH0c6Ex5jNNj0FNUgVwHp3ra6RpBBbC04y5kXQ4fjl4vyPPIrCjpGa2+dZsuwWBGHr2uHpYnBzUxe0SU7vIEnNjQcQidrSMzTVVQ9+fx9SXSRMebJj5tI8YmTCDb7yBKzafrYKWdbN38RwP1I5tLij8AOOkLD8IJl3YU1yVqIk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQGqdD7vtL1YVEaFALBMBeVjANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAASwBJAFQAQQBIAEEATQBBAFwAUwBLAG8AagBpAG0AYTAeFw0xNjAxMTIwMjM5MTNaFw0xNzAxMTEwODM5MTNaMCsxKTAnBgNVBAMeIABLAEkAVABBAEgAQQBNAEEAXABTAEsAbwBqAGkAbQBhMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC98fRzoTHmM02PQU1SBXAenetrpGkEFsLTjLmRdDh+OXi/I88isKOkZrb51my7BYEYeva4elicHNTF7RJTu8gSc2NBxCJ2tIzNNVVD35/H1JdJEx5smPm0jxiZMINvvIErNp+tgpZ1s3fxHA/Ujm0uKPwA46QsPwgmXdhTXJWoiQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAF9Ta9Z7n2WWiEs+ZaZOrdok78LfnAczd5QE56IpiWF9oCCAUhhO7A5tnacBKE4EUznc1KRt3Bcy8+keXZ12P8MPbgCG4YyzwGv5WacXgTJSwhJjBl9yt+HJlalweekl48jXhB9/q2jLczew4VrcO5aefdqtwfV+ShOJhEaWebsF</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
